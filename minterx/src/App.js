@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Sidenav from './components/sidenav/sidenav.component';
+import Header from './components/header/header.component';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './main.scss';
+
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       
+    }
+  }
+
+  render() {
+    return (
+      <div className="app">
+        <div className="container">
+          <div className="content">
+            <Sidenav />
+            <div className="main-content">
+              <Header />
+              <main className="main">
+
+              </main>
+            </div>
+          </div>
+          <footer className="footer">
+
+          </footer>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;

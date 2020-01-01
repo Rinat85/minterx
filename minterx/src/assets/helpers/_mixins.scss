@@ -1,0 +1,13 @@
+@mixin text-headers($font-size: 1.875rem, $text-transform: uppercase) {
+    font-family:'Akrobat ExtraBold';
+    font-size: $font_size;
+    color: $color-text-headers;
+    text-transform: uppercase;
+}
+
+@mixin text-content($font-size: 1rem, $text-transform: uppercase) {
+    font-family:'Akrobat Regular';
+    font-size: $font_size;
+    color: $color-text-content;
+    text-transform: $text-transform;
+}

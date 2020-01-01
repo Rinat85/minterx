@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Akrobat Regular';
+    src: local('Akrobat'), local('Akrobat-Regular'), url('../fonts/Akrobat.woff2') format('woff2'), url('../fonts/Akrobat.woff') format('woff'), url('../fonts/Akrobat.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat ExtraLight';
+    src: local('Akrobat ExtraLight'), local('Akrobat-ExtraLight'), url('../fonts/Akrobatextralight.woff2') format('woff2'), url('../fonts/Akrobatextralight.woff') format('woff'), url('../fonts/Akrobatextralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat ExtraBold';
+    src: local('Akrobat ExtraBold'), local('Akrobat-ExtraBold'), url('../fonts/Akrobatextrabold.woff2') format('woff2'), url('../fonts/Akrobatextrabold.woff') format('woff'), url('../fonts/Akrobatextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}

@@ -1,0 +1,62 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+
+    width: 13.25rem;
+    height: 43.125rem;
+
+    background-color: $color-bg-nav;
+
+    border-radius: 0 0 10px 10px;
+
+    .logo-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 2.875rem 0;
+
+        h1 {
+            @include text-content(1.9575rem, capitalize);
+            margin-right: 0.375rem;
+            font-weight: 400;
+        }
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+
+        .nav-link {
+            padding: 1.1875rem 0.375rem;
+            margin: 0 0.9375rem;
+
+            display: flex;
+            align-items: center;
+
+            border: 0;
+            border-bottom: 0.0625rem solid rgba($color: #ffffff, $alpha: 0.2);
+
+            @include text-content(0.875rem);
+            
+            .nav-link-icon {
+                font-size: 1.3125rem;
+                margin-right: 1.25rem;
+            }
+
+            &:nth-child(2) .nav-link-icon {
+                transform: rotateZ(-15deg);
+            }
+
+            &:nth-child(6) .nav-link-icon {
+                transform: rotateZ(32deg);
+            }
+
+            &:nth-child(7) {
+                border-bottom: 1px solid transparent;
+            }
+        }
+
+        
+    }
+}
