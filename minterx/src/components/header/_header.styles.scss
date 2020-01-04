@@ -1,0 +1,21 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 1;
+
+    margin-top: 2.6875rem;
+
+    .time-and-lang {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .signin-and-signup {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        height: 2.8125rem;
+    }
+}

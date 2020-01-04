@@ -1,0 +1,61 @@
+.lang-wrapper {
+    @include text-content(0.875rem);
+    text-align: center;
+    
+    width: 60px;
+    margin-left: 0.8125rem;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    .lang-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0 0.6875rem 0 0.875rem;
+
+        height: 2.8125rem;
+        line-height: 2.8125rem;
+
+        border-radius: 10px;
+
+        background-color: rgba(52, 52, 52, 0.2);
+
+        .lang-header-title {
+            margin-right: 6px;
+        }
+    }
+
+    .lang-list {
+        border-radius: 10px;
+
+        background-color: rgba(52, 52, 52, 0.2);
+
+        .lang-list-item {
+            height: 2.8125rem;
+            line-height: 2.8125rem;
+
+            padding: 0 0.6875rem 0 0.875rem;
+
+            background-color: transparent;
+
+            transition: background-color 0.3s ease-in-out;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+
+            &:nth-child(1) {
+                border-radius: 10px 10px 0 0;
+            }
+
+            &:nth-child(2) {
+                border-radius: 0 0 10px 10px;
+            }
+        }
+
+        
+    }
+}

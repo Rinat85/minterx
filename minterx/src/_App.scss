@@ -17,8 +17,12 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                flex-shrink: 1;
 
+                width: 100%;
                 height: 100%;
+
+                padding-left: 1.875rem;
             }
         }
     }

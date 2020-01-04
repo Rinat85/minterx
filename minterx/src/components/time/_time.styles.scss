@@ -1,0 +1,13 @@
+.time {
+    @include text-content(2.1206rem);
+    text-align: center;
+
+    height: 2.8125rem;
+    line-height: 2.8125rem;
+
+    padding: 0 1.875rem;
+
+    border-radius: 10px;
+
+    background-color: rgba(52, 52, 52, 0.2);
+}

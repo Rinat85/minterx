@@ -1,20 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Sidenav from './components/sidenav/sidenav.component';
 import Header from './components/header/header.component';
 
 import './main.scss';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props)
-  
-    this.state = {
-       
-    }
-  }
+export const LangContext = React.createContext(null);
 
-  render() {
-    return (
+const App = () => {
+
+  const [langs, setLangs] = useState([
+    {
+      id: 0,
+      type: 'EN',
+      selected: false,
+      title: 'En'
+    },
+    {
+      id: 1,
+      type: 'RU',
+      selected: true,
+      title: 'Рус'
+    }
+  ]);
+
+  return (
+    <LangContext.Provider value={[langs, setLangs]}>
       <div className="app">
         <div className="container">
           <div className="content">
@@ -31,8 +41,8 @@ class App extends React.Component {
           </footer>
         </div>
       </div>
-    );
-  }
+    </LangContext.Provider>
+  );
 }
 
 export default App;
