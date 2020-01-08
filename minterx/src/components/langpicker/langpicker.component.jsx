@@ -8,23 +8,20 @@ import { LangContext } from '../../App';
 
 const LangPicker = () => {
 
-    const [ langs, setLangs ] = useContext(LangContext);
+    const [ lang, setLang, langs ] = useContext(LangContext);
     const [ langTitle, setLangTitle ] = useState(null);
     
     useEffect(() => {
-        setLangTitle(langs.filter(lang => lang.selected).map(lang => lang.title));   
-    }, [langs]);
+        setLangTitle(lang.title);   
+    }, [lang]);
     
 
     const [ isOpen, setIsOpen ] = useState(false);
 
     const toggleList = () => setIsOpen(!isOpen);
 
-    const changeLang = () => {
-        const newLangs = langs.map(({selected, ...lang}) => {
-            return {selected: !selected, ...lang}
-        });
-        setLangs(newLangs);
+    const changeLang = (item) => {
+        setLang(item);
         closeList();
     }
 
@@ -63,7 +60,7 @@ const LangPicker = () => {
             {isOpen && 
                 <ul className="lang-list">
                     {langs.map((lang, idx) => (
-                        <li className="lang-list-item" key={idx} onClick={() => changeLang()}>{lang.title}</li>
+                        <li className="lang-list-item" key={idx} onClick={() => changeLang(lang)}>{lang.title}</li>
                     ))}
                 </ul>
             }

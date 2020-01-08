@@ -5,6 +5,9 @@
 
 // Pages
 @import './App';
+@import './pages/exchange/exchange.styles';
+@import './pages/rate-reserv/rate-reserv.styles';
+@import './pages/deals/deals.styles';
 
 // Components
 @import './components/sidenav/sidenav.styles';
@@ -13,3 +16,5 @@
 @import './components/langpicker/langpicker.styles';
 @import './components/signin/signin.styles';
 @import './components/signup/signup.styles';
+@import './components/exchange-select/exchange-select.styles';
+@import './components/footer/footer.styles';

@@ -2,6 +2,7 @@
     @include text-content(0.875rem);
     text-align: center;
     
+    position: relative;
     width: 60px;
     margin-left: 0.8125rem;
 
@@ -29,6 +30,10 @@
     }
 
     .lang-list {
+        position: absolute;
+        top: 100%;
+        width: 60px;
+
         border-radius: 10px;
 
         background-color: rgba(52, 52, 52, 0.2);

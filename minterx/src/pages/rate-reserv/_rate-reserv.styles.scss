@@ -1,0 +1,88 @@
+.rate-reserv {
+    width: 100%;
+    height: 100%;
+
+    padding: 0 25px;
+
+    background-color: rgba(0,30,61, 0.5);
+
+    border-radius: 10px;
+
+    .ratereserv-title {
+        @include text-headers;
+        line-height: 4.375rem;
+        
+        padding-top: 10px;
+    }
+
+    .ratereserv-table {
+        width: 100%;
+
+        border-collapse: collapse;
+
+        color: #ffffff;
+
+        .table-head {
+            @include text-content(1.125rem);
+
+            tr {
+                border: none;
+                border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+
+                padding-bottom: 50px;
+
+                th {
+                    padding-bottom: 20px;
+                }
+                
+                th:first-child {
+                    text-align: left;
+                }
+            }
+        }
+
+        .table-body {
+            
+            .table-row {
+                text-align: center;
+
+                transition: background-color 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: rgba(0,30,61, 0.8);
+                }
+
+                td {
+                    @include text-content(0.875rem);
+                    
+                    padding: 8px 0;
+                }
+    
+                td:first-child {
+                    display: flex;
+                    align-items: center;
+                    vertical-align: middle;
+
+                    font-size: 1rem;
+                }
+    
+        
+                .table-icon {
+                    height: 19px;
+
+                    margin-right: 0.9375rem;
+                }
+            }
+
+            .table-row:nth-child(1) {
+                td {
+                    padding-top: 20px;
+                }
+            }
+           
+        }
+        
+    }
+
+    
+}
