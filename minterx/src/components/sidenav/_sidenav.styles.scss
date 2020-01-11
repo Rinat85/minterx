@@ -9,6 +9,10 @@
 
     border-radius: 0 0 10px 10px;
 
+    @include respond-below(sm) {
+        display: none;
+    }
+
     .logo-section {
         display: flex;
         justify-content: center;

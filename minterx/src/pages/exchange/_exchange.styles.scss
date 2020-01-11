@@ -1,10 +1,20 @@
 .exchange {
     display: flex;
     height: 100%;
+    
+    @include respond-below(sm) {
+        overflow-y: scroll;
+        margin: 30px 16px 0 16px;
+    };
+
     .exchange-box {
         display: flex;
         justify-content: space-between;
         width: 100%;
+        
+        @include respond-below(sm) {
+            flex-direction: column;
+        };
     
         .exchange-item {
             width: 416px;
@@ -16,12 +26,21 @@
             background-color: rgba(0,30,61, 0.5);
     
             border-radius: 10px;
+
+            @include respond-below(sm) {
+                width: 100%;
+                margin-bottom: 24px;
+            };
     
             .exchange-item-title {
                 @include text-headers;
                 text-align: center;
     
                 margin: 33px 0;
+
+                @include respond-below(sm) {
+                    margin: 14px 0;
+                };
             }
     
             .exchange-input-wrap {
@@ -44,6 +63,11 @@
                     outline: none;
         
                     background-color: transparent;
+
+                    @include respond-below(sm) {
+                        line-height: 50px;
+                        font-size: 24px;
+                    };
                 }
         
                 .exchange-label {
@@ -84,6 +108,10 @@
                 margin-top: 35px;
     
                 transition: background-color 0.3s ease-in-out;
+
+                @include respond-below(sm) {
+                    margin: 16px 0 22px;
+                };
     
                 &:hover {
                     background-color: lighten($color: #3152ad, $amount: 5%);

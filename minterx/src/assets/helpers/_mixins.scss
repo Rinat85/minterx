@@ -25,6 +25,7 @@
 
     @include text-headers(1.125rem);
     line-height: $height;
+    text-align: center;
 
     background-color: $color;
 }

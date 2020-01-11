@@ -6,9 +6,18 @@
 
     margin-top: 2.6875rem;
 
+    @include respond-below(sm) {
+        flex-direction: column;
+        margin: 0;
+    }
+
     .time-and-lang {
         display: flex;
         justify-content: space-between;
+
+        @include respond-below(sm) {
+            margin: 12px 15px 0 15px;
+        };
     }
 
     .signin-and-signup {
@@ -17,5 +26,10 @@
         align-items: center;
 
         height: 2.8125rem;
+
+        @include respond-below(sm) {
+            margin-top: 15px;
+            justify-content: center;
+        };
     }
 }

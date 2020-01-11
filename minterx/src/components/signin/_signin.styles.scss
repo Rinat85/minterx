@@ -8,6 +8,10 @@
 
     margin-right: 2.3125rem;
 
+    @include respond-below(sm) {
+        margin-right: 12px;
+    };
+
     .signin-icon {
         height: 1.875rem;
         width: 1.875rem;
